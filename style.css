@@ -1,6 +1,12 @@
+
+html {
+  font-size: 25px;
+}
+
 h1 {
   color: #1c2321;
-  font-size: 50px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 .uppercase {
   text-transform: uppercase;
@@ -12,17 +18,12 @@ h1 {
   margin-bottom: 110px;
 }
 
-h1{color: #1C2321;
-font-size: 50px}
-.uppercase{text-transform: uppercase;}
-.capitalize{text-transform: capitalize;}
-.movedammit{margin-bottom: 110px;}
 h2{color: #1C2321;
-font-size: 40px}
+font-size: 2rem;
+text-align: center;}
 
 * {
   font-family: "Antonio", sans-serif;
-  font-size: 20px;
 }
 .bg-green {
   background: #cd7f58;
@@ -37,32 +38,23 @@ a:hover {
   color: #7286a0;
 }
 
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .flex-container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.flex-container3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .break {
   flex-basis: 100%;
   height: 0;
 }
 
 header,
-footer {
+footer{
   text-align: center;
 }
 
@@ -97,4 +89,69 @@ footer {
 }
 .card:hover {
   background: url("images/sponge.png") no-repeat;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .content-container2 {
+   display: flex;
+   flex-direction: column;
+ }
+
+body {
+  overflow:hidden;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  body {
+    overflow: visible;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .content-item {
+    flex: 1 1 1;
+  }
+
+
+  .flexible-container {
+    display: flex;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* equal size children */
+  .flexible-container .content {
+    flex: 1 0 0;
+  }
+  .content:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+  .flexible-container2 {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* equal size children */
+  .flexible-container .content {
+    flex: 1 0 0;
+  }
+  .content:not(:last-of-type) {
+    margin-right: 1rem;
+  }
 }
