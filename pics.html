@@ -59,14 +59,18 @@
       </div>
       <div class="content-container">
         <div class="content-item">
-          <img src="images/starwars1.jpg" alt="Star Wars Garbage Compactor" style="max-width: 600px;"/>
+          <picture>
+              <source media="(max-width: 454px)" srcset="images/starwars3.jpg">
+              <source media="(min-width: 455px)" srcset="images/starwars1.jpg">
+              <img src="images/starwars1.jpg" alt="Star Wars Garbage Compactor" style="max-width: 600px;"/>
+            </picture>
         </div>
         <div class="content-item">
-          <img
-            src="images/starwars2.png"
-            alt="Star Wars Garbage Compactor"
-            style="max-width: 600px;"
-          />
+          <picture>
+          <source media="(max-width: 454px)" srcset="images/starwars4.jpg">
+          <source media="(min-width: 455px)" srcset="images/starwars2.png">
+          <img src="images/starwars2.png" alt="Star Wars Garbage Compactor" style="max-width: 600px;"/>
+          </picture>
         </div>
       </div>
     </div>
