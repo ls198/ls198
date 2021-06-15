@@ -15,4 +15,10 @@ function websiteLoaded() {
     document.querySelector('.nav-bar').classList.toggle('mobile-active');
     document.querySelector('body').classList.toggle('mobile-active');
   };
-}
+};
+
+const change = document.querySelector('#change');
+
+change.mouseover = function() {
+  console.log('mouseover');
+};
