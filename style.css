@@ -77,9 +77,24 @@ footer{
   margin-top: 10px;
 }
 
-.nav-bar {
+.nav-bar2 {
   position: fixed;
   z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav.internal {
+  background: #3e3e3e;
+  text-align: center;
 }
 
 /* Work in progress test */
@@ -104,6 +119,7 @@ footer{
 body {
   overflow-x: hidden;
 }
+
 img {
   width: 100%;
   height: auto;

@@ -2,6 +2,7 @@
 <html class="bg-green">
   <head>
     <link href="./style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/java.css" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Leon Sander</title>
@@ -11,13 +12,23 @@
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap"
       rel="stylesheet"
     />
+    <script src="assets/java.js"></script>
+    <script>
+      console.log("im html domkument");
+    </script>
   </head>
 
   <body>
-    <header>
-      <nav class="nav-bar">
-        <a href="./index.html">Home</a>
-        <a href="./pics.html">Pics</a>
+    <header class="nav-bar">
+      <button id="menu">
+        <img id="hamburger" src="assets/icons/hamburger.svg" class="active" />
+        <img id="close" src="assets/icons/close.svg" />
+      </button>
+      <nav>
+        <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pics.html">Pics</a></li>
+      </ul>
       </nav>
     </header>
 
@@ -31,13 +42,11 @@
           width="212"
         />
       </div>
-      <nav>
         <ul>
           <li><a href="#Lebenslauf">Lebenslauf</a></li>
           <li><a href="#Hobbys">Hobbys</a></li>
           <li><a href="#SocialMedia">Social Media</a></li>
         </ul>
-      </nav>
     </div>
 
     <section id="Lebenslauf">
@@ -144,6 +153,7 @@
         </ul>
       </section>
     </div>
+    </section>
     <footer id="SocialMedia">
       <h2>Social Media</h2>
       <a
@@ -151,9 +161,7 @@
         target="_blank"
         >Youtube Account</a
       ><br />
-      <a href="https://www.flickr.com/photos/frankonator/" target="_blank"
-        >flickr</a
-      >
+      <a href="https://www.flickr.com/photos/frankonator/" target="_blank">flickr</a>
     </footer>
   </body>
   &nbsp;

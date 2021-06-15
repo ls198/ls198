@@ -1,0 +1,70 @@
+.nav-bar nav {
+  display: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .nav-bar nav {
+    position: fixed;
+    display: block;
+    z-index: 10;
+  }
+
+  .nav-bar button {
+    display: none;
+  }
+}
+
+#menu img {
+  width: 32px;
+}
+
+#menu img:hover {
+  cursor: pointer;
+}
+
+#close {
+  display: none;
+  padding: 5px;
+}
+
+/* mobile-active */
+
+.nav-bar.mobile-active nav {
+  position: fixed;
+  top: 58px;
+  height: 100%;
+  width: 100%;
+  background: #cd7f58;
+  z-index: 1000;
+  padding: 0;
+  display: block;
+}
+
+body.mobile-active {
+  overflow: hidden;
+}
+
+.nav-bar.mobile-active ul {
+  padding-top: 20%;
+  padding-right: 20px;
+}
+
+.nav-bar.mobile-active li {
+  display: block;
+  padding: 20px;
+  font-size: 2.5rem;
+}
+
+.mobile-active #close {
+  display: block;
+}
+
+.mobile-active #hamburger {
+  display: none;
+}
